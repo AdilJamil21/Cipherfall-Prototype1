@@ -20,7 +20,7 @@ public class ButtonHover : MonoBehaviour
         if (buttonImage != null)
         {
             Color newColor = Color.black;
-            newColor.a = 0.4f; // Set your desired alpha value (0.0f to 1.0f)
+            newColor.a = 1.0f; // Set your desired alpha value (0.0f to 1.0f)
             buttonImage.color = newColor;
         }
     }
@@ -30,7 +30,7 @@ public class ButtonHover : MonoBehaviour
         // Change the color to your custom color with adjusted alpha on hover exit
         if (buttonImage != null)
         {
-            Color newColor = HexToColor("BE1C84");
+            Color newColor = HexToColor("FF00A0");
             newColor.a = 0.0f; // Reset alpha to fully opaque
             buttonImage.color = newColor;
         }
